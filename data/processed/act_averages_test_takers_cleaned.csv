@@ -1,0 +1,32 @@
+Year,Test_Takers,English,Math,Reading,Science,Composite,Era,Tech_Milestone
+1992,875603.0,20.3,20.1,21.2,20.8,20.7,PC era,Rise of personal computing
+1994,891714.0,20.3,20.2,21.2,20.9,20.8,PC era,Commercial internet expansion
+1995,945369.0,20.3,20.2,21.3,21.0,20.8,PC era,Web browsers popularize internet
+1996,924663.0,20.3,20.2,21.3,21.1,20.9,PC era,
+1997,959301.0,20.3,20.6,21.3,21.1,21.0,Early internet,Google founded
+1998,995039.0,20.4,20.8,21.4,21.1,21.0,Early internet,
+1999,1019053.0,20.5,20.7,21.4,21.0,21.0,Early internet,
+2000,1065138.0,20.5,20.7,21.4,21.0,21.0,Early internet,
+2001,1069772.0,20.5,20.7,21.3,21.0,21.0,Early internet,Wikipedia launched
+2002,1116082.0,20.2,20.6,21.1,20.8,20.8,Early internet,
+2003,1175059.0,20.3,20.6,21.2,20.8,20.8,Early internet,
+2004,1171460.0,20.4,20.6,21.3,20.9,20.9,Early internet,Facebook founded
+2005,1186251.0,20.4,20.7,21.3,20.9,20.9,Early internet,
+2006,1206455.0,20.6,20.7,21.4,20.9,21.1,Early internet,
+2007,1300599.0,20.7,20.8,21.5,21.0,21.2,Smartphone emergence,iPhone released
+2008,1421941.0,20.6,21.0,21.4,20.8,21.1,Smartphone emergence,
+2009,1480469.0,20.6,21.0,21.4,20.9,21.1,Smartphone emergence,
+2010,1568835.0,20.5,21.0,21.3,20.9,21.0,Smartphone emergence,Tablet computing boom
+2011,1623112.0,20.6,21.0,21.3,20.9,21.1,Smartphone emergence,
+2012,1666017.0,20.5,21.1,21.3,20.9,21.1,Mobile/cloud maturity,MOOCs popular
+2013,1799243.0,20.2,20.9,21.1,20.7,20.9,Mobile/cloud maturity,
+2014,1845787.0,20.3,20.9,21.3,20.8,21.0,Mobile/cloud maturity,
+2015,1924436.0,20.4,20.8,21.4,20.9,21.0,Mobile/cloud maturity,
+2016,2090342.0,20.1,20.6,21.3,20.8,20.8,Mobile/cloud maturity,AI deep learning breakthroughs
+2017,2030038.0,20.3,20.7,21.4,21.0,21.0,Mobile/cloud maturity,
+2018,1914817.0,20.2,20.5,21.3,20.8,20.8,Mobile/cloud maturity,
+2019,1782820.0,20.1,20.4,21.2,20.6,20.7,Mobile/cloud maturity,
+2020,1670497.0,19.9,20.2,21.2,20.6,20.6,Pandemic & GenAI onset,COVID-19 remote learning
+2021,1295349.0,19.6,19.9,20.9,20.4,20.3,Pandemic & GenAI onset,
+2022,1349644.0,19.0,19.3,20.4,19.9,19.8,Pandemic & GenAI onset,Generative AI (ChatGPT) released
+2023,1386335.0,18.6,19.0,20.1,19.6,19.5,Pandemic & GenAI onset,
