@@ -1,2 +1,6 @@
-.env
-import praw.py
+# Ignore the Python virtual environment
+.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
