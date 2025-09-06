@@ -34,4 +34,4 @@ src/: Intended for all Python code and scripts.
 README.md: Provides a high-level overview of the project.
 
 Current Status
-The project's research, data collection, and analysis are complete. All results are present in the data/ and reports/ folders. The code to reproduce these results is in a "work-in-progress" state due to a technical issue with the API authentication. The goal is to resolve this to provide a fully reproducible project in the near future.
+The project's research, data collection, analysis, and visualization are complete. The results are present in the data/ and reports/ folders. A Python script is included in the src/ folder to demonstrate the sentiment analysis and visualization workflow.
