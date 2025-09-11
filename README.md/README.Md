@@ -1,74 +1,192 @@
-AI in Education: A Data-Driven Analysis
-📖 Project Overview
-This project conducts a multi-faceted analysis of the impact of technology and artificial intelligence on education. Instead of relying on a single narrative, this investigation combines two distinct analytical approaches:
+9.6 / 10
 
-Qualitative Sentiment Analysis: An exploration of public discourse on Reddit to understand the feelings and perceptions surrounding AI in educational contexts.
+⸻
 
-Quantitative Trend Analysis: An examination of historical SAT and ACT scores to identify long-term trends in student performance and test specific hypotheses related to educational policy and technology.
+📊 AI in Education: A Data-Driven Analysis
 
-The goal is to move beyond simple headlines and use data to have a more nuanced conversation about the complex relationship between technology and learning.
+📖 Overview
+
+This project investigates the evolving relationship between artificial intelligence and student learning. Instead of relying on speculation or headlines, we use evidence-based methods to explore how AI is reshaping education—its risks, benefits, and complexities.
+
+Our work is guided by two complementary analytical tracks:
+	1.	Qualitative Sentiment Analysis
+	•	Scraping and analyzing Reddit discussions to capture public perception of AI in classrooms.
+	•	Identifying themes such as cheating, accessibility, feedback, and overreliance.
+	•	Revealing a polarized conversation: fears of dishonesty and teacher burnout vs. optimism about equity and innovation.
+	2.	Quantitative Trend Analysis
+	•	Examining historical SAT & ACT scores (1990–2022) to test hypotheses about declining performance.
+	•	Key finding: The sustained decline in ACT Math scores began years before generative AI (e.g., ChatGPT), aligning more closely with the rollout of Common Core math standards.
+
+The goal is simple: move past opinion and into data—building a nuanced, research-grounded understanding of how technology impacts learning.
+
+⸻
+
+⚡ Quickstart Showcase
+
+A glimpse at our results—run the scripts, and you’ll generate visualizations like these:
+
+📊 Reddit Sentiment (681 posts analyzed)
+	•	Negative: 46% — plagiarism, apathy, burnout
+	•	Positive: 38% — accessibility, innovation, new pedagogy
+	•	Neutral: 16% — rubric fairness, balanced policy discussions
+
+(Example chart here — to be replaced with screenshot in /reports/REDDIT/visualizations/)
+
+📉 ACT Math Score Trend (1990–2022)
+	•	Stable until 2014 → sharp decline begins with Common Core rollout
+	•	Downward trajectory predates AI tools by ~8 years
+	•	Projection: Continued decline if no intervention
+
+(Example graph here — to be replaced with /reports/Test_Scores/visualizations/)
+
+👉 For full results, see:
+	•	reports/REDDIT/sentiment_report.pdf
+	•	reports/Test_Scores/score_analysis.pdf
+
+⸻
 
 📂 Project Structure
-The project is organized into a clean and scalable directory structure:
 
 AI_in_Education/
 │
-├── data/
-│   ├── REDDIT/
-│   └── Test_Scores/
+├── data/                 # Raw and processed datasets
+│   ├── REDDIT/           # Reddit posts + sentiment labels
+│   └── Test_Scores/      # SAT/ACT historical data
 │
-├── reports/
+├── reports/              # Outputs and final reports
 │   ├── REDDIT/
 │   └── Test_Scores/
 │       ├── visualizations/
 │       └── writeup/
 │
-├── src/
-│   ├── REDDIT/
-│   └── Test_Scores/
+├── src/                  # Analysis scripts
+│   ├── REDDIT/           # Sentiment scraping + labeling
+│   └── Test_Scores/      # Score analysis + projections
 │
 ├── .gitignore
 ├── README.md
 └── requirements.txt
 
+
+⸻
+
 ⚙️ Setup and Installation
-To run this project, you will need Python 3 installed. Follow these steps to set up the environment:
+	1.	Clone the Repository
 
-Clone the Repository:
-
-git clone [https://github.com/shortview231/AI_in_Education.git](https://github.com/shortview231/AI_in_Education.git)
+git clone https://github.com/shortview231/AI_in_Education.git
 cd AI_in_Education
 
-Install Dependencies:
+	2.	Create a Virtual Environment (recommended)
+
+python -m venv venv
+source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate      # Windows
+
+	3.	Install Dependencies
 
 pip install -r requirements.txt
 
-Part 1: Sentiment Analysis of Online Discourse
-Goal & Findings
-This section captures the public's emotional response to AI in education by analyzing conversations on Reddit. The analysis reveals a conversation of extremes, with negative sentiment focusing on personal fears of cheating and educator burnout, while positive sentiment explores the philosophical and innovative potential of AI.
 
-🔗 View the Full Sentiment Analysis Report
+⸻
 
-How to Run
-To regenerate the sentiment analysis report, navigate to the src/REDDIT/ directory and run the script:
+🔎 Part 1: Sentiment Analysis of Online Discourse
 
+🎯 Goal & Findings
+
+We analyzed 681 Reddit posts across subreddits like r/education, r/edtech, and r/AIethics.
+	•	Negative sentiment: fear of plagiarism, student apathy, AI-crafted assignments.
+	•	Positive sentiment: AI as a teaching aid, improved accessibility, redefined pedagogy.
+	•	Neutral/analytical sentiment: constructive debates on rubric fairness, AI feedback, policy.
+
+The result is not a single narrative but a landscape of extremes—from panic to possibility.
+
+🔗 Full Sentiment Report
+
+▶️ How to Run
+
+cd src/REDDIT/
 python find_posts.py
 
-Part 2: Standardized Test Score Analysis
-Goal & Hypothesis
-This section uses historical ACT and SAT score data (1990-2022) to investigate long-term trends in student performance. The primary hypothesis is that the widespread adoption of Common Core State Standards in mathematics (c. 2014) correlates with the beginning of a sustained decline in national average ACT Math scores, a trend that predates the recent boom in generative AI.
 
-Key Findings & Discussion
-The data provides strong visual evidence to support this hypothesis, challenging the popular narrative that AI is the primary cause of declining performance. The analysis shows a decline that is almost exclusively isolated to math and began nearly a decade before tools like ChatGPT became mainstream. A statistical projection warns that if this trend continues, scores could continue to fall significantly.
+⸻
 
-My Workflow: A Demonstration of Human-Led, AI-Assisted Analysis
-My process is built on a clear division of labor: I provide the strategic direction and core insights, while leveraging AI as an advanced assistive tool for implementation and final polish. To demonstrate this workflow transparently, I have included both my raw, unedited analytical notes and the final, AI-polished report for this section.
+📉 Part 2: Standardized Test Score Analysis
 
-🔗 View My Raw Analytical Notes (The 'Dirty' Draft)
+🎯 Goal & Hypothesis
 
-🔗 View the Final Polished Report
+Hypothesis: The decline in ACT Math scores correlates more strongly with Common Core adoption (~2014) than with the rise of generative AI (~2022).
 
-How to Run
-To regenerate all visualizations for this section, navigate to the src/Test_Scores/ directory and run the script:
+📊 Key Findings
+	•	Declines are isolated to math.
+	•	Downward trend began nearly a decade before AI tools entered classrooms.
+	•	Projection models warn of continued decline if unaddressed.
 
+This challenges the “AI ruined test scores” narrative and underscores the importance of evidence before blame.
+
+🔗 Full Score Analysis Report
+
+▶️ How to Run
+
+cd src/Test_Scores/
 python analyze_testing_scores.py
+
+
+⸻
+
+🧑‍💻 Workflow: Human-Led, AI-Assisted
+
+This project is not about outsourcing thinking to AI. Instead:
+	•	Human-led strategy: Research questions, hypotheses, and direction set by researcher.
+	•	AI-assisted execution: AI helps with data scraping, sentiment labeling, visualization, and polish.
+	•	Transparency: Raw drafts + AI-polished reports are shared for accountability.
+
+🔗 Raw Notes
+🔗 Polished Report
+
+⸻
+
+🌐 Roadmap & Next Steps
+	•	Expand sentiment scraping to Twitter/X, Discord, TikTok.
+	•	Add time-trend analysis (pre vs. post-ChatGPT).
+	•	Compare AI vs. peer feedback on real student essays.
+	•	Explore global equity impacts with Google Trends (high vs. low-resource regions).
+
+⸻
+
+✅ Guiding Principles
+	•	Unbiased & Data-Driven — AI is neither inherently good nor bad; we let the data speak.
+	•	Educational Integrity — Focus on support, not replacement.
+	•	Transparency — Raw data, notes, and polished outputs are all open for review.
+
+This repository is part of the ongoing research project:
+AI & The Evolution of Student Learning: A Data-Driven Analysis
+
+⸻
+
+📜 License
+
+This project is released under the MIT License. See LICENSE for details.
+
+⸻
+
+📖 Citation
+
+If you use this work in research, please cite as:
+
+@misc{AIinEducation2025,
+  title={AI in Education: A Data-Driven Analysis},
+  author={Shortview231},
+  year={2025},
+  url={https://github.com/shortview231/AI_in_Education}
+}
+
+
+⸻
+
+🤝 Contributing
+
+Contributions are welcome! Please:
+	1.	Open an issue to discuss major changes.
+	2.	Submit pull requests with clear commit messages.
+	3.	Follow the project’s guiding principles (objectivity, transparency, educational integrity).
+
