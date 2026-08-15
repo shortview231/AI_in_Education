@@ -1,0 +1,47 @@
+Category,Item,Priority,Status,Data Needed,Method,Key Risk,Next Action
+Research Question,Cross-stakeholder perception and use gap,Critical,Active,"students; educators; parents",Cross-stakeholder comparison,Survey incompatibility,Audit parallel survey questions
+Construct,Usefulness,High,Needs variable audit,Attitude items,"descriptives; chi-square; regression",Wording differences,Map variables across sources
+Construct,Academic integrity and cheating,High,Needs variable audit,Scenario or concern items,"cross-tabs; chi-square",Different definitions of cheating,Build task-level construct map
+Construct,Learning effects,High,Needs variable audit,Perceived learning items,"descriptives; regression",Self-report is not learning outcome,Separate perception from measured outcomes
+Construct,Critical thinking,High,Needs variable audit,Concern/benefit items,"cross-tabs; regression",Direction may be ambiguous,Audit exact item wording
+Construct,Personalization and accessibility,Medium,Needs variable audit,Usefulness/use-case items,Descriptive subgroup analysis,May be sparsely measured,Search instruments for accessibility terms
+Construct,Teacher workload and productivity,High,Dataset candidate found,Teacher use/time-saving measures,"descriptives; regression",Perceived vs measured time savings,Audit Gallup/RAND fields
+Construct,Privacy and data concerns,Medium,Needs variable audit,Privacy concern items,"cross-tabs; regression",Often absent from education surveys,Search codebooks
+Construct,Accuracy and misinformation,High,Needs variable audit,Trust/verification items,"descriptives; regression",ChatGPT vs GenAI wording,Map technology definitions
+Construct,Appropriate vs inappropriate use,Critical,Needs variable audit,Task/scenario permission items,"cross-tabs; chi-square",Context dependence,Preserve task-level responses
+Construct,Policy support and integration,Critical,Needs variable audit,Restrict/permit/encourage items,"differences in proportions; regression",Response scales differ,Create harmonization rules
+Construct,Actual AI usage,Critical,Dataset candidate found,Frequency/purpose/platform,"descriptives; regression; trends",Self-report and changing tools,Keep frequency and purpose separate
+Dataset,Walton Impact AI in Classroom 2024,Critical,Locate microdata,"4 stakeholder samples",Direct comparison,Microdata may not be public,Contact/locate downloadable data and instrument
+Dataset,Common Sense Ipsos Dawn of AI Era,High,Locate microdata,"1045 paired teen-parent households",Matched-pair analysis,Raw data not located,Locate data/codebook or retain as literature
+Dataset,Gallup Walton Gen Z,High,Acquire,"downloadable survey data",Student trends and attitudes,Not matched to adults,Download data and instrument
+Dataset,Gallup Walton Teachers,High,Acquire,"teacher use/workload/guidance",Teacher analysis,Teacher-only,Download data and instrument
+Dataset,RAND American Educator Panels,High,Acquire selected surveys,"teacher/leader public-use files",Educator analysis,Different instrument,Identify AI-specific public-use files
+Dataset,Global HE ChatGPT 2024-25,Critical,Acquire,"22963 student observations",Student subgroup/regression,Higher-ed only,Download raw data/codebook/license
+Dataset,Stockholm secondary GenAI,Medium,Acquire,"1266 student observations",Secondary-student analysis,Swedish context,Download and document geography limitation
+Hypothesis,H1 stakeholder group predicts support,High,Provisional,Parallel support item,"difference in proportions; chi-square",Requires compatible survey,Test only in direct-comparison source
+Hypothesis,H2 usage frequency predicts usefulness,High,Provisional,Usage + usefulness,"ordinal/logistic regression",Reverse causality,Audit microdata
+Hypothesis,H3 familiarity predicts integration support,High,Provisional,Familiarity + policy attitude,Regression,Confounding,Audit microdata
+Hypothesis,H4 usage predicts critical-thinking concern,Medium,Provisional,Usage + concern,"chi-square; regression",Direction uncertain,Keep two-sided inference
+Hypothesis,H5 stakeholder predicts cheating concern,High,Provisional,Stakeholder + cheating concern,Chi-square,Question compatibility,Use parallel survey only
+Hypothesis,H6 teacher use predicts workload benefit,High,Provisional,Teacher usage + time saving,Regression,Self-report,Audit Gallup teacher dataset
+Hypothesis,H7 policy clarity predicts permitted use,High,Provisional,Policy clarity + behavior,Logistic regression,Policy awareness confounding,Audit student datasets
+Hypothesis,H8 parents underestimate teen AI use,High,Provisional,Paired awareness + student use,Matched-pair analysis,Requires paired microdata,Locate Common Sense raw data
+Hypothesis,H9 demographics predict adoption,Medium,Provisional,Demographics + usage,Multivariable logistic regression,Overgeneralization,Pre-specify controls
+Hypothesis,H10 use rises without equivalent enthusiasm,High,Provisional,Repeated year measures,Trend analysis,Instrument changes,Harmonize repeated items first
+Method,Question crosswalk,Critical,Not started,All instruments,Metadata harmonization,False equivalence,Create question_crosswalk.csv
+Method,Survey weighting,Critical,Not started,Weight variables,Weighted estimates,Ignoring complex survey design,Document weight/design fields
+Method,Confidence intervals,High,Planned,Weighted estimates,95% CI,Incorrect SE method,Match calculation to design
+Method,NLP social discussion,Low,Optional,Reddit/public text,"topic classification; sentiment",Nonrepresentative population,Keep separate from survey inference
+Validity,AI familiarity,Critical,Track as confounder,Familiarity variables,Control/stratification,May explain group differences,Audit all sources
+Validity,Survey year,Critical,Track as confounder,Collection dates,Stratification/trend,Fast-moving adoption,Never silently pool years
+Validity,Technology definition,Critical,Track as metadata,Question wording,Harmonization,ChatGPT is not all GenAI,Record exact definition
+Validity,Purpose of use,Critical,Track as variable,Task-level usage,Stratification,Brainstorming differs from answer generation,Do not collapse all use
+Gap,Attitude-use gap across stakeholders,Critical,Leading candidate,Comparable attitude + behavior items,"cross-tabs; regression",Data compatibility,Prioritize during audit
+Gap,Parent perception vs student behavior,High,Strong candidate,Paired parent-student data,Matched analysis,Microdata availability,Attempt data acquisition
+Gap,Policy clarity vs appropriate use,High,Strong candidate,Policy + behavior,Logistic regression,Observational confounding,Audit fields
+Gap,Familiarity explains attitude differences,High,Strong candidate,Familiarity + attitudes,Regression,Residual confounding,Audit fields
+Gap,Critical-thinking concern vs actual use,High,Strong candidate,Concern + behavior,Regression,Self-report,Audit fields
+Deliverable,Interactive dashboard,High,Planned,Clean analytical tables,Tableau/dashboard,Overclaiming pooled sources,Design source-aware filters
+Deliverable,Reproducible GitHub pipeline,Critical,Active,"raw; processed; scripts; docs",Python/SQL,Data licensing,Keep raw files license-compliant
+Deliverable,Research paper,Critical,Deferred,Final analyzed evidence,Academic report,Writing before analysis,Do not draft results yet
+Deliverable,Presentation,Medium,Deferred,Final results,Slides,Premature narrative,Build after analysis
