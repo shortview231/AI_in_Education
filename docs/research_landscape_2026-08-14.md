@@ -1,271 +1,166 @@
-# AI in Education Research Landscape and Design
+# AI in Education: Research Design and Evidence Landscape
 
-**Date:** 2026-08-14
+**Research design note, August 2026**
 
-## Working title
+## Research question
 
-**The AI Perception Gap: How Students, Educators, and Parents Differ in Their Use, Trust, and Acceptance of Generative AI in Education**
+How do students, educators, and parents differ in their perceptions and use of generative AI in education, and how are those differences associated with familiarity, actual usage, and institutional guidance?
 
-## Primary research question
+The purpose of this document is to record the evidence landscape and methodological safeguards behind the public analysis. It is not a product roadmap or an internal task tracker.
 
-How do students, educators, and parents differ in their perceptions and use of generative AI in education, and to what extent are those differences associated with AI familiarity, actual usage, and institutional guidance?
+## Central methodological rule
 
-## Core methodological decision
+Surveys should not be merged into one synthetic dataset merely because they discuss the same topic.
 
-Do **not** merge unrelated student, educator, and parent surveys into one synthetic master dataset simply because they discuss AI. Direct statistical stakeholder comparisons should be restricted to surveys with parallel wording, compatible sampling, comparable dates, and compatible definitions of generative AI.
+Direct statistical comparisons require compatible populations, dates, technology definitions, question wording, response scales, and sampling designs. When those conditions are not met, results should remain source-specific and descriptive.
 
-Comparison hierarchy:
+A useful comparison hierarchy is:
 
-1. Same survey, same date, parallel questions: strongest.
-2. Paired parent-child survey: very strong.
-3. Same organization, repeated survey wave: strong for trends.
-4. Separate surveys with nearly identical wording/populations: possible with explicit warnings.
-5. Separate surveys with different wording: descriptive only.
-6. Different countries, different questions, different years: do not statistically pool.
+1. Same survey program, same period, parallel questions.
+2. Paired respondent designs, such as parent-child samples.
+3. Repeated waves from the same organization with harmonized questions.
+4. Separate surveys with demonstrably comparable measures, accompanied by explicit caveats.
+5. Different wording, populations, countries, or years: descriptive context only, not pooled inference.
 
-## Strongest dataset candidates
+## Evidence sources considered
 
-### Impact Research / Walton AI in the Classroom 2024
-- Stakeholders: U.S. K-12 teachers, K-12 students, undergraduates, parents
-- Sample: 1,003 teachers; 1,001 K-12 students; 1,003 undergraduates; 1,003 parents
-- Strength: strongest direct cross-stakeholder design found because samples were collected within the same research program and period
-- Limitation: public respondent-level microdata not yet verified
-- URL: https://www.waltonfamilyfoundation.org/ai-in-the-classroom
+### Cross-stakeholder and family research
 
-### Common Sense Media / Ipsos, The Dawn of the AI Era
-- Stakeholders: U.S. teens and their parents
-- Sample: 1,045 paired households
-- Strength: paired parent-child design supports a parent-awareness versus student-behavior question
-- Limitation: raw microdata not yet located
-- URL: https://www.commonsensemedia.org/research/the-dawn-of-the-ai-era-teens-parents-and-the-adoption-of-generative-ai-at-home-and-school
+- Walton Family Foundation / Impact Research, *AI in the Classroom*
+- Common Sense Media / Ipsos, *The Dawn of the AI Era*
 
-### Gallup / Walton Voices of Gen Z
-- Population: U.S. Gen Z
-- Strength: usage, attitudes, familiarity, trends, repeated waves
-- Access: downloadable data/crosstabs are available through the research hub
-- URL: https://www.gallup.com/analytics/651674/gen-z-research.aspx
+These are useful because they include multiple stakeholder groups or paired family perspectives. Respondent-level data availability and reuse terms must be verified before microdata analysis.
 
-### Gallup / Walton K-12 Teacher Research
-- Population: U.S. K-12 teachers
-- Strength: teacher use, workload, guidance, perceived time savings
-- URL: https://news.gallup.com/poll/691967/three-teachers-weekly-saving-six-weeks-year.aspx
+### Student research
 
-### RAND American Educator Panels
-- Population: U.S. teachers and education leaders
-- Strength: probability-based recruitment, weighting, selected public-use data
-- Best use: educator analysis of AI use, lesson planning, instruction, policy, training
-- URL: https://www.rand.org/education-employment-infrastructure/survey-panels/aep.html
+- Gallup / Walton Voices of Gen Z
+- Higher Education Students' Evolving Perceptions of ChatGPT, 2024-25
+- Secondary education student survey data on generative AI use for school work
 
-### Higher Education Students' Evolving Perceptions of ChatGPT, 2024-25
-- Population: university students
-- Sample: 22,963 respondents across 120 countries/territories
-- Raw observations: yes
-- Best use: student microdata, subgroup analysis, familiarity/use/attitude relationships
-- URL: https://data.mendeley.com/datasets/nv2343nwsb/1
+These sources can support questions about usage, familiarity, perceived usefulness, concern, and subgroup differences. Geographic and sampling limits should remain visible.
 
-### Secondary education students' views and use of GenAI for school work
-- Population: secondary students
-- Sample: 1,266
-- Raw observations: yes
-- Best use: K-12-level student attitudes and behavior
-- Limitation: Swedish context limits U.S. generalization
-- URL: https://su.figshare.com/articles/dataset/Secondary_education_students_views_and_use_of_GenAI_for_school_work_-_quantitative_survey_data_with_1266_respondents/28850645
+### Educator research
 
-## Candidate hypotheses
+- Gallup / Walton K-12 teacher research
+- RAND American Educator Panels
 
-| ID | Independent variable | Dependent variable | Expected relationship | Candidate test |
-|---|---|---|---|---|
-| H1 | Stakeholder group | Support for educational AI | Students more supportive than parents; educator position uncertain | Difference in proportions / chi-square |
-| H2 | AI usage frequency | Perceived usefulness | More frequent users report greater usefulness | Ordinal/logistic regression |
-| H3 | AI familiarity | Support for formal school integration | Greater familiarity predicts greater support | Regression |
-| H4 | AI usage frequency | Critical-thinking concern | Frequent users may report lower concern | Chi-square / regression |
-| H5 | Stakeholder group | Cheating concern | Educators/parents report greater concern than students | Chi-square |
-| H6 | Teacher AI usage | Perceived workload benefit | More frequent use predicts greater benefit | Regression |
-| H7 | School AI-policy clarity | Appropriate/permitted use | Clearer policies associated with more permitted use | Chi-square / logistic regression |
-| H8 | Parent awareness | Student actual AI use | Parents underestimate teen use | Matched-pair analysis |
-| H9 | Demographics / SES | AI adoption | Adoption differs after controls | Multivariable logistic regression |
-| H10 | Survey year | AI use vs enthusiasm | Usage rises/stays high while enthusiasm need not rise | Trend analysis |
+These sources are relevant to teacher usage, policy guidance, workload, training, and perceived productivity effects.
 
-All hypotheses remain provisional until variable/codebook auditing confirms that the required fields exist.
+### Labor-market and business context
 
-## Core constructs to audit
+Separate public evidence from sources such as O*NET, Bureau of Labor Statistics data, Census business surveys, and occupation-level exposure research can be used to examine whether attitudes about AI align with measurable adoption or labor-market patterns.
+
+Technical exposure is not treated as proof that a job was replaced by AI.
+
+## Candidate analytical relationships
+
+Potential relationships include:
+
+- stakeholder group and support for educational AI
+- usage frequency and perceived usefulness
+- familiarity and support for formal integration
+- usage and concern about critical thinking
+- stakeholder group and academic-integrity concern
+- teacher use and perceived workload benefit
+- policy clarity and permitted use
+- parent awareness and student-reported use
+- demographic factors and adoption
+- change in usage and attitudes across comparable survey waves
+
+These are hypotheses to test only when the underlying variables and sampling designs support the comparison.
+
+## Constructs requiring careful definition
 
 - usefulness
-- academic integrity / cheating
-- learning
+- academic integrity
+- perceived learning effects
 - critical thinking
-- personalization / accessibility
-- teacher workload / productivity
+- personalization and accessibility
+- teacher workload and productivity
 - privacy
-- accuracy / misinformation
-- appropriate vs inappropriate use
-- policy support / restriction / integration
-- actual AI use frequency
+- accuracy and misinformation
+- appropriate versus inappropriate use
+- policy support and restriction
+- actual usage frequency
 - purpose of use
 - AI familiarity
 - institutional guidance
 
-## Recommended statistical approach
+Purpose of use is especially important. Brainstorming, tutoring, editing, and generating a finished answer are materially different behaviors and should not automatically be collapsed into one exposure measure.
 
-Use the simplest defensible method for each question:
+## Statistical approach
 
-- weighted descriptive statistics when survey weights exist
-- cross-tabulations and confidence intervals
+Use the simplest method that the data can defend:
+
+- weighted descriptive statistics when valid survey weights exist
+- confidence intervals
+- cross-tabulations
 - differences in proportions
-- chi-square tests for categorical variables within valid comparable samples
+- chi-square tests for compatible categorical variables
 - logistic or ordinal regression when respondent-level data and covariates justify it
-- demographic subgroup analysis with appropriate controls
-- year-over-year percentage-point trend analysis only for harmonized repeated questions
-- NLP/topic classification for public social-discussion data only as a separate digital-trace analysis, not as representative population polling
+- subgroup analysis with appropriate controls
+- time trends only for harmonized repeated questions
 
-Example explanatory model:
+Public social-media discussion may provide qualitative context, but it is not representative population polling and should not be presented as such.
 
-`attitude ~ usage + familiarity + age + gender + SES + geography + education`
+## Confounders and validity threats
 
-Avoid causal language unless the design genuinely supports causal inference.
+Important factors include:
 
-## Important confounders and validity threats
-
-- selection bias
-- self-report bias
-- AI familiarity
-- usage frequency
-- age
-- education level
+- selection and self-report bias
+- age and education level
 - socioeconomic status
 - geography
-- school AI policy
-- teacher training
-- subject taught
-- grade level
-- public/private school
-- discipline or major
-- parent education
-- internet/device access
-- language background
+- school policy and teacher training
+- grade level and subject
+- institution type
 - prior academic performance
+- device and internet access
 - survey year
-- specific AI product
-- purpose of AI use
+- specific AI product named in the question
+- purpose and frequency of AI use
 - teacher-approved versus unapproved use
-- urban/rural setting
-- institutional AI availability
-- ChatGPT-specific wording versus generative-AI-general wording
+- differences between ChatGPT-specific and generative-AI-general wording
 
-Purpose of use is especially important. Brainstorming and generating a finished essay should not be collapsed into the same substantive exposure simply because both count as AI use.
+## Comparability record
 
-## Ranked research gaps
+For every cross-source comparison, the analysis should record:
 
-1. **Attitude-use gap across stakeholders**: strongest overall combination of originality, data availability, feasibility, academic value, and portfolio value.
-2. **Parent perception vs student behavior**: highly original and academically useful if paired raw data can be obtained.
-3. **Policy clarity and appropriate/permitted use**: actionable policy question with good analytical feasibility.
-4. **AI familiarity as an explanation of attitude differences**: strong explanatory model with promising microdata.
-5. **Critical-thinking concern vs actual use**: potentially interesting contradiction between behavior and concern.
-6. **Teacher workload/productivity**: strong supporting analysis, but less novel by itself.
-7. **General who-supports-AI-more comparison**: useful baseline, but not sufficient as the paper's main contribution.
+- source and survey year
+- population
+- original question wording
+- response scale
+- construct being measured
+- technology definition
+- sampling and weighting details where available
+- whether the comparison is directly comparable, approximately comparable, descriptive only, or not comparable
 
-## Secondary research questions
+## Causal-language boundary
 
-1. Which educational AI uses are considered acceptable by each stakeholder group?
-2. Does frequent AI use predict stronger perceived usefulness?
-3. Does familiarity predict support for formal AI integration?
-4. How strongly do stakeholders associate AI with cheating or academic-integrity risks?
-5. Does AI use coexist with concern about critical thinking and learning?
-6. How accurately do parents understand student AI behavior?
-7. Do clear school policies correspond with different student usage patterns?
-8. Have attitudes and usage evolved differently between 2023 and 2026?
+The project distinguishes among:
 
-## Proposed dataset architecture
+- **description:** what a dataset reports
+- **association:** variables that move together
+- **causal evidence:** designs that credibly identify an effect
 
-```text
-data/
-    raw/
-        students/
-        educators/
-        parents/
-        cross_stakeholder/
-        social_text/
-    processed/
-        students_clean.csv
-        educators_clean.csv
-        parents_clean.csv
-        stakeholder_comparison.csv
-        survey_metadata.csv
-    reference/
-        question_crosswalk.csv
-        source_registry.csv
-        variable_dictionary.csv
-```
+Timing alone is not sufficient to attribute changes in test scores, employment, attitudes, or behavior to AI, educational policy, or another intervention.
 
-`question_crosswalk.csv` should record source, survey year, stakeholder, original question, response scale, construct, technology definition, comparison group, and comparison strength.
+## Reproducibility and data governance
 
-Recommended comparison labels:
+Public code should make transformations and analytical choices inspectable. Raw third-party datasets should be obtained from their original sources unless redistribution rights are clear. Credentials, private paths, working journals, and bulk user-generated content do not belong in the public repository.
 
-- `DIRECTLY_COMPARABLE`
-- `APPROXIMATELY_COMPARABLE`
-- `DESCRIPTIVE_ONLY`
-- `NOT_COMPARABLE`
+The repository's `data/README.md` records this publication boundary.
 
-## Dashboard concept
+## Portfolio value
 
-Potential pages/sections:
+This research design demonstrates:
 
-- Stakeholder overview: Student | Educator | Parent
-- AI adoption: frequency and purpose of use
-- Usefulness vs concern
-- Academic integrity by task/scenario
-- Learning and critical-thinking perceptions
-- Teacher productivity and time savings
-- Parent-student awareness gap
-- Policy and institutional guidance
-- Attitude vs behavior quadrant
-- Demographic and geographic subgroup explorer
-- Trend view for harmonized repeated survey items
-
-Recommended filters: year, age/grade, geography, AI usage, AI familiarity, demographics, survey source.
-
-## Recommended paper structure
-
-1. Introduction
-2. Literature Review
-3. Research Questions and Hypotheses
-4. Data Sources
-5. Dataset Comparability and Harmonization
-6. Methods
-7. Results
-8. Stakeholder Comparison
-9. Usage-Attitude Relationship
-10. Demographic and Institutional Factors
-11. Discussion
-12. Limitations
-13. Implications
-14. Conclusion
-15. Reproducibility and Data Appendix
-
-The Dataset Comparability and Harmonization section should be prominent rather than hidden in a footnote.
-
-## Immediate next phase
-
-Do not write the final paper yet.
-
-1. Acquire the confirmed machine-readable datasets.
-2. Preserve untouched raw copies.
-3. Collect survey instruments and codebooks.
-4. Verify licenses and reuse restrictions.
-5. Audit variables against the construct list.
-6. Build `question_crosswalk.csv`.
-7. Build `source_registry.csv`.
-8. Finalize only the hypotheses that can actually be tested.
-9. Build reproducible cleaning and EDA scripts.
-10. Move from raw data -> cleaned data -> SQL/Python analysis -> statistical results -> visualizations/dashboard -> paper -> presentation.
-
-## Research standard
-
-Evidence first, conclusions second. Keep the following categories explicit throughout the project:
-
-- findings directly supported by this project's data
-- findings reported by previous literature
-- reasonable interpretation
-- speculation
-
-A failed or reversed hypothesis is a valid result.
+- source evaluation
+- survey comparability reasoning
+- hypothesis formation
+- statistical-method selection
+- confounder identification
+- provenance and reuse awareness
+- separation of correlation from causation
+- reproducible analytical planning
+- communication of uncertainty and limitations
